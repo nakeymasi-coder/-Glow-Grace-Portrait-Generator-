@@ -195,6 +195,57 @@ footer{
 }
 
 </style>
+<!-- =========================================================
+PRO HEADSHOTS MODE - CSS
+Install in the host generator's stylesheet area.
+All styling is scoped to .ph-root and ph- selectors.
+========================================================= -->
+<style>
+.ph-root{--ph-blue:#168fea;--ph-deep:#103b63;--ph-silver:#b8c2cc;--ph-pearl:#fbfdff;--ph-ink:#1b2936;--ph-muted:#687b8c;--ph-line:#dce6ee;--ph-shadow:0 12px 32px rgba(16,59,99,.09);color:var(--ph-ink);font-family:inherit;font-size:15px;line-height:1.5}
+.ph-root *{box-sizing:border-box}.ph-root button,.ph-root input,.ph-root select,.ph-root textarea{font:inherit}
+.ph-root .ph-shell{max-width:920px;margin:0 auto;padding:16px;border:1px solid var(--ph-line);border-radius:22px;background:linear-gradient(145deg,#fff,#f5faff 58%,#fff);box-shadow:var(--ph-shadow)}
+.ph-root .ph-intro{padding:8px 4px 16px}.ph-root .ph-eyebrow{font-size:10px;letter-spacing:.15em;font-weight:900;color:var(--ph-blue)}
+.ph-root .ph-title{margin:5px 0;color:var(--ph-deep);font-size:clamp(24px,4vw,33px);line-height:1.1;letter-spacing:-.04em}
+.ph-root .ph-title-accent{background:linear-gradient(100deg,#168fea,#9ba8b6 58%,#103b63);background-clip:text;-webkit-background-clip:text;color:transparent}
+.ph-root .ph-lead{margin:0;color:#526b7f;font-size:14px}.ph-root .ph-heartline{margin-top:12px;padding:10px 12px;border:1px solid #dcecf8;border-radius:12px;background:linear-gradient(110deg,#f0f8ff,#fff);color:#4e6579;font-size:12px}
+.ph-root .ph-heartline strong{color:var(--ph-deep)}.ph-root .ph-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:10px 0 15px}
+.ph-root .ph-step{display:flex;align-items:center;justify-content:center;gap:8px;padding:9px 7px;border:1px solid var(--ph-line);border-radius:12px;background:#fff;color:#748493;font-size:12px;font-weight:800}
+.ph-root .ph-step-number{display:grid;place-items:center;width:23px;height:23px;border-radius:50%;background:#edf2f6;color:#526a7f}
+.ph-root .ph-step-active{border-color:#86c7fb;background:#eef8ff;color:var(--ph-deep)}.ph-root .ph-step-active .ph-step-number,.ph-root .ph-step-done .ph-step-number{background:var(--ph-blue);color:#fff}
+.ph-root .ph-screen{padding:17px;border:1px solid var(--ph-line);border-radius:17px;background:#fff}.ph-root .ph-screen[hidden],.ph-root [hidden]{display:none!important}
+.ph-root .ph-screen-heading{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:16px}
+.ph-root .ph-screen-heading h3{margin:0;color:var(--ph-deep);font-size:19px}.ph-root .ph-screen-heading p{margin:3px 0 0;color:var(--ph-muted);font-size:12px}
+.ph-root .ph-step-tag{padding:5px 9px;border-radius:999px;background:#eef7ff;color:#176ca9;font-size:10px;font-weight:900;white-space:nowrap}
+.ph-root .ph-upload{display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;padding:22px 16px;border:1.5px dashed #94c5e8;border-radius:15px;background:linear-gradient(130deg,#f2f9ff,#fff);cursor:pointer}
+.ph-root .ph-upload-icon{display:grid;place-items:center;width:35px;height:35px;border-radius:50%;background:#dff1ff;color:#087ac9;font-size:24px}
+.ph-root .ph-upload-title{color:var(--ph-deep);font-size:14px;font-weight:900}.ph-root .ph-upload-copy{max-width:390px;color:var(--ph-muted);font-size:11px}
+.ph-root .ph-file-input{max-width:100%;margin-top:7px;color:#526b7f;font-size:11px}.ph-root .ph-photo-preview{display:flex;align-items:center;gap:12px;margin-top:11px;padding:10px;border:1px solid var(--ph-line);border-radius:12px;background:#fbfdff}
+.ph-root .ph-photo-image{width:65px;height:65px;object-fit:cover;border-radius:9px;border:1px solid var(--ph-line)}.ph-root .ph-photo-meta{display:flex;flex:1;flex-direction:column;gap:2px;min-width:0}
+.ph-root .ph-photo-meta strong{color:var(--ph-deep);font-size:12px;overflow-wrap:anywhere}.ph-root .ph-photo-meta span{color:var(--ph-muted);font-size:10px}
+.ph-root .ph-text-button{border:0;background:transparent;color:#176fae;font-size:11px;font-weight:850}.ph-root .ph-tip{margin-top:13px;padding:11px 12px;border-left:3px solid var(--ph-blue);border-radius:0 10px 10px 0;background:#f3f9fe;color:#566d80;font-size:11px}
+.ph-root .ph-tip strong{color:var(--ph-deep)}.ph-root .ph-field{margin:12px 0}.ph-root .ph-field label{display:block;margin-bottom:6px;color:#29465f;font-size:12px;font-weight:850}
+.ph-root .ph-optional{color:#8996a2;font-size:10px;font-weight:600}.ph-root .ph-control{display:block;width:100%;min-height:42px;padding:10px 11px;border:1px solid #cfdce6;border-radius:10px;background:#fbfdff;color:var(--ph-ink);outline:none;font-size:13px}
+.ph-root .ph-control:focus{border-color:var(--ph-blue);box-shadow:0 0 0 3px rgba(22,143,234,.13)}.ph-root .ph-textarea{min-height:78px;resize:vertical}.ph-root .ph-help{display:block;margin-top:5px;color:#82909d;font-size:10px}
+.ph-root .ph-actions{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:16px}.ph-root .ph-actions-end{justify-content:flex-end}
+.ph-root .ph-button{border:0;border-radius:10px;padding:10px 14px;font-size:12px;font-weight:900;cursor:pointer}.ph-root .ph-button-primary{background:linear-gradient(110deg,#168fea,#1266a9);color:#fff;box-shadow:0 6px 15px rgba(22,143,234,.2)}
+.ph-root .ph-button-secondary{border:1px solid #d5e0e9;background:#f4f8fb;color:#35536d}.ph-root .ph-identity-lock{padding:13px;border:1px solid #d8eafb;border-radius:14px;background:linear-gradient(120deg,#f0f8ff,#fff)}
+.ph-root .ph-lock-heading{display:flex;align-items:center;gap:9px}.ph-root .ph-lock-symbol{display:grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#dff1ff;color:#087dcb}
+.ph-root .ph-lock-heading strong{display:block;color:var(--ph-deep);font-size:13px}.ph-root .ph-lock-heading div span{display:block;color:#738596;font-size:10px}
+.ph-root .ph-identity-lock ul{margin:10px 0 0;padding-left:19px;color:#526b7e;font-size:11px}.ph-root .ph-identity-lock li{padding:2px 0}
+.ph-root .ph-look-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:13px}.ph-root .ph-look-card{overflow:hidden;border:1px solid var(--ph-line);border-radius:13px;background:#fff}
+.ph-root .ph-look-head{padding:10px 11px;background:linear-gradient(110deg,#f0f8ff,#fff);border-bottom:1px solid #e7eef4}.ph-root .ph-look-head strong{display:block;color:var(--ph-deep);font-size:13px}
+.ph-root .ph-look-head span{display:block;margin-top:2px;color:#718394;font-size:10px}.ph-root .ph-look-body{padding:10px 11px}.ph-root .ph-look-body p{margin:0 0 8px;color:#566d80;font-size:11px}
+.ph-root .ph-prompt{width:100%;min-height:185px;padding:9px;border:1px solid #e0e8ef;border-radius:9px;background:#fcfdff;color:#354c60;font-size:10px;line-height:1.5;resize:vertical}
+.ph-root .ph-copy-one{margin-top:8px}.ph-root .ph-results-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.ph-root .ph-qc,.ph-root .ph-where,.ph-root .ph-sell{margin-top:13px;padding:13px;border:1px solid var(--ph-line);border-radius:13px;background:#fbfdff}
+.ph-root .ph-qc h4,.ph-root .ph-where h4{margin:0 0 4px;color:var(--ph-deep);font-size:13px}.ph-root .ph-qc p,.ph-root .ph-sell p{margin:0;color:#6d7f8f;font-size:10px}
+.ph-root .ph-qc-grid,.ph-root .ph-use-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
+.ph-root .ph-qc-grid label,.ph-root .ph-use-grid label{display:flex;gap:7px;align-items:flex-start;color:#50677b;font-size:10px}
+.ph-root .ph-qc-grid input,.ph-root .ph-use-grid input{accent-color:var(--ph-blue);margin:2px 0 0}
+.ph-root .ph-sell{background:linear-gradient(115deg,#eff8ff,#fff);border-color:#d9eafa}.ph-root .ph-sell strong{display:block;margin-bottom:4px;color:var(--ph-deep);font-size:13px}
+.ph-root .ph-status{min-height:16px;margin-top:8px;color:#176fae;font-size:11px}
+@media(max-width:620px){.ph-root .ph-shell{padding:10px;border-radius:16px}.ph-root .ph-screen{padding:12px}.ph-root .ph-screen-heading{flex-direction:column}.ph-root .ph-steps{gap:4px}.ph-root .ph-step{flex-direction:column;gap:4px;padding:7px 3px;font-size:10px}.ph-root .ph-look-list{grid-template-columns:1fr}.ph-root .ph-qc-grid,.ph-root .ph-use-grid{grid-template-columns:1fr}.ph-root .ph-actions{flex-wrap:wrap}.ph-root .ph-button{padding:10px 11px}}
+</style>
 </head>
 <body>
 <div class="sideScrollButtons">
@@ -451,6 +502,92 @@ footer{
 
   <div id="saved" class="saved"></div>
 </section>
+</div>
+
+<!-- =========================================================
+PRO HEADSHOTS MODE - HTML
+Install this markup inside the host generator's mode/content area.
+========================================================= -->
+<div id="ph-pro-headshots" class="ph-root">
+  <section class="ph-shell" aria-label="Pro Headshots by Glam">
+    <header class="ph-intro">
+      <div class="ph-eyebrow">GLOW GRACE PORTRAIT GENERATOR · PRO MODE</div>
+      <h2 class="ph-title">Pro Headshots <span class="ph-title-accent">by Glam</span></h2>
+      <p class="ph-lead">One photo of you. Four polished looks for the places your work and your name need to show up.</p>
+      <div class="ph-heartline"><strong>Made for:</strong> coaches, speakers, realtors, church leaders, authors, job seekers and business owners who want professional photos that still look like themselves.</div>
+    </header>
+    <nav class="ph-steps" aria-label="Pro Headshots steps">
+      <button type="button" class="ph-step ph-step-active" data-ph-go="1"><span class="ph-step-number">1</span><span>Your Photo</span></button>
+      <button type="button" class="ph-step" data-ph-go="2"><span class="ph-step-number">2</span><span>Your Details</span></button>
+      <button type="button" class="ph-step" data-ph-go="3"><span class="ph-step-number">3</span><span>Your Four Looks</span></button>
+    </nav>
+
+    <section class="ph-screen ph-screen-active" data-ph-screen="1">
+      <div class="ph-screen-heading"><div><h3>Start with a clear photo</h3><p>Choose one photo where your face is easy to see. This is the identity reference for all four looks.</p></div><span class="ph-step-tag">STEP 1 OF 3</span></div>
+      <label class="ph-upload" for="ph-photo">
+        <span class="ph-upload-icon" aria-hidden="true">＋</span><span class="ph-upload-title">Choose your reference photo</span>
+        <span class="ph-upload-copy">Use a clear, well-lit photo with your face visible. A simple background helps.</span>
+        <input id="ph-photo" class="ph-file-input" type="file" accept="image/*">
+      </label>
+      <div id="ph-photo-preview" class="ph-photo-preview" hidden>
+        <img id="ph-photo-image" class="ph-photo-image" alt="Selected reference photo preview">
+        <div class="ph-photo-meta"><strong id="ph-photo-name">Photo selected</strong><span>Use this same photo as the reference when you paste each prompt into your image tool. This module does not upload it to a server.</span></div>
+        <button type="button" id="ph-remove-photo" class="ph-text-button">Remove</button>
+      </div>
+      <div class="ph-tip"><strong>Keep the real you.</strong> Every prompt asks the image tool to preserve your facial features, skin tone, apparent age and body proportions. No face replacement or beauty-filter look.</div>
+      <div class="ph-actions ph-actions-end"><button type="button" class="ph-button ph-button-primary" data-ph-next="2">Next: Your Details →</button></div>
+    </section>
+
+    <section class="ph-screen" data-ph-screen="2" hidden>
+      <div class="ph-screen-heading"><div><h3>Tell us what you do</h3><p>Your profession guides the clothing, setting and overall feel. No one-size-fits-all business suit required.</p></div><span class="ph-step-tag">STEP 2 OF 3</span></div>
+      <div class="ph-field">
+        <label for="ph-profession">What best describes your work?</label>
+        <select id="ph-profession" class="ph-control">
+          <option value="">Choose your profession</option>
+          <option>Coach or consultant</option><option>Speaker or trainer</option><option>Realtor or property professional</option>
+          <option>Church leader or ministry professional</option><option>Author or creative professional</option><option>Job seeker or career professional</option>
+          <option>Small business owner</option><option value="Custom profession">Something else</option>
+        </select>
+      </div>
+      <div id="ph-custom-profession-wrap" class="ph-field" hidden><label for="ph-custom-profession">Type your profession</label><input id="ph-custom-profession" class="ph-control" type="text" maxlength="90" placeholder="Example: nonprofit director"></div>
+      <div class="ph-field"><label for="ph-brand-notes">Anything your photos should communicate? <span class="ph-optional">Optional</span></label><textarea id="ph-brand-notes" class="ph-control ph-textarea" rows="3" maxlength="500" placeholder="Example: welcoming, experienced, creative, trustworthy, energetic"></textarea><small class="ph-help">Add a few words about the impression you want to make. Leave blank if you are not sure yet.</small></div>
+      <div class="ph-tip"><strong>Four different settings, one consistent person.</strong> Each look changes its styling and scene while keeping your identity recognizable.</div>
+      <div class="ph-actions"><button type="button" class="ph-button ph-button-secondary" data-ph-back="1">← Back</button><button type="button" class="ph-button ph-button-primary" data-ph-next="3">Build My Four Looks →</button></div>
+    </section>
+
+    <section class="ph-screen" data-ph-screen="3" hidden>
+      <div class="ph-screen-heading"><div><h3>Your four professional looks</h3><p>Four distinct directions, not one photo with four different backdrops.</p></div><span class="ph-step-tag">STEP 3 OF 3</span></div>
+      <div class="ph-identity-lock">
+        <div class="ph-lock-heading"><span class="ph-lock-symbol" aria-hidden="true">✦</span><div><strong>Your identity stays yours</strong><span>These instructions are included in every prompt.</span></div></div>
+        <ul>
+          <li>Keep the same face, facial proportions, skin tone and distinctive features as the uploaded reference.</li>
+          <li>Do not change apparent age, body type, body proportions or natural features.</li>
+          <li>Use natural, light retouching only. Keep real skin texture. No plastic skin or filter-face effect.</li>
+          <li>Do not add text, logos, watermarks or fake credentials.</li>
+        </ul>
+      </div>
+      <div id="ph-look-list" class="ph-look-list" aria-live="polite"></div>
+      <div class="ph-results-actions"><button type="button" id="ph-copy-all" class="ph-button ph-button-primary">Copy All Four Prompts</button><button type="button" id="ph-regenerate" class="ph-button ph-button-secondary">Refresh Prompts</button></div>
+      <div class="ph-qc">
+        <h4>Before you use or deliver the images</h4><p>Check the four results. If one misses the mark, regenerate that look before sharing the set.</p>
+        <div class="ph-qc-grid">
+          <label><input type="checkbox" class="ph-qc-check"> Same person and recognizable face in all four</label>
+          <label><input type="checkbox" class="ph-qc-check"> Skin tone, age and body proportions preserved</label>
+          <label><input type="checkbox" class="ph-qc-check"> Eyes, teeth, hair and hands look natural</label>
+          <label><input type="checkbox" class="ph-qc-check"> Four genuinely different settings and styling</label>
+          <label><input type="checkbox" class="ph-qc-check"> No unwanted text, logos or watermarks</label>
+        </div>
+      </div>
+      <div class="ph-where"><h4>Where can you use your headshots?</h4><div class="ph-use-grid">
+        <label><input type="checkbox"> LinkedIn profile</label><label><input type="checkbox"> Speaker or event bio</label>
+        <label><input type="checkbox"> Author page or book promotion</label><label><input type="checkbox"> Church or ministry program</label>
+        <label><input type="checkbox"> Business website or social page</label><label><input type="checkbox"> Resume or professional profile</label>
+      </div></div>
+      <div class="ph-sell"><strong>Turn the skill into a service</strong><p>Offer a four-look headshot package to local professionals, new business owners, speakers or community leaders. Agree on photo-use permission, revisions and final file delivery before taking an order.</p></div>
+      <div class="ph-actions"><button type="button" class="ph-button ph-button-secondary" data-ph-back="2">← Edit Details</button><button type="button" class="ph-button ph-button-secondary" data-ph-start-over>Start Over</button></div>
+    </section>
+    <div id="ph-status" class="ph-status" role="status" aria-live="polite"></div>
+  </section>
 </div>
 
 <footer>all rights reserved by glamorousgrammyglowup 2026</footer>
@@ -2373,6 +2510,139 @@ function remixCurrentPrompt(){
 init(); renderSaved();
 initSunoControls();
 updateSliderLabels();
+</script>
+<!-- =========================================================
+PRO HEADSHOTS MODE - JS
+Install in the host generator's JavaScript area.
+Call window.phInitProHeadshots() after the markup is mounted.
+========================================================= -->
+<script>
+(function phProHeadshotsModule(){
+  "use strict";
+  const phLooks = [
+    {name:"The Executive",label:"Confident, polished and leadership-ready",wardrobe:"Profession-appropriate elevated tailoring or refined business separates. Choose details suited to the person's real profession; do not force a generic dark suit.",background:"A refined modern office or architectural business setting with soft depth, clean lines and subtle natural light.",lighting:"Balanced, flattering window light with gentle studio fill and realistic skin texture.",pose:"Composed, approachable standing or seated portrait with relaxed shoulders and a confident natural expression.",framing:"Professional head-and-shoulders portrait with a little breathing room."},
+    {name:"The Studio",label:"Clean, timeless and versatile",wardrobe:"A polished solid-color top, blouse, knit, jacket or other profession-appropriate outfit chosen to complement the subject without overpowering them.",background:"A seamless pearl, soft gray or pale neutral studio backdrop with a subtle tonal gradient and no props.",lighting:"Soft professional studio lighting with natural dimension, gentle highlights and no harsh retouching.",pose:"Direct, relaxed camera connection with an easy natural expression and comfortable posture.",framing:"Classic centered head-and-shoulders studio portrait."},
+    {name:"The Personal Brand",label:"Warm, recognizable and connected to the work",wardrobe:"A signature-look outfit suited to the selected profession and personal brand. Use tasteful color and texture; avoid costume-like styling.",background:"A thoughtfully styled workspace or profession-related environment with a few softly blurred, relevant details and no readable signage.",lighting:"Bright natural-looking light with warm, welcoming color and realistic skin detail.",pose:"Engaged, open body language with a natural smile or confident conversational expression.",framing:"A slightly wider upper-body portrait that gives context without distracting from the person."},
+    {name:"The Editorial",label:"Distinctive, elevated and magazine-inspired",wardrobe:"A fashion-forward but credible professional outfit with considered texture, shape and accessories, appropriate to the subject's profession and stated brand impression.",background:"A sophisticated editorial environment with architectural depth, a clean textured wall or softly graduated neutral backdrop.",lighting:"Directional yet flattering portrait light with controlled shadow and natural skin texture.",pose:"A more expressive three-quarter angle or subtle turn, with confident posture and an intentional editorial expression.",framing:"An elegant three-quarter head-and-shoulders crop with deliberate negative space."}
+  ];
+
+  function phEscape(value){return String(value).replace(/[&<>"']/g,function phReplace(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch];});}
+  function phBuildPrompt(phLook,phProfession,phBrandNotes){
+    const phIdentity="Use the user's uploaded reference photo as the strict identity reference. Preserve the same person: facial structure, facial proportions, eye shape, nose, lips, smile, skin tone, distinctive marks and other recognizable features. Do not change apparent age, ethnicity, body type, body proportions or defining physical features. Keep natural skin texture and pores. Retouch lightly and naturally only. No plastic skin, face reshaping, beauty-filter face, artificial age change, identity drift or look-alike substitution.";
+    const phBrand=phBrandNotes?"Desired professional impression: "+phBrandNotes+". Express this through styling, expression and scene while keeping the person authentic.":"Create a confident, approachable professional impression that feels authentic to the person.";
+    return [
+      "Create one finished, photorealistic professional headshot image titled "+phLook.name+".",
+      "PROFESSION: "+phProfession+".",
+      "IDENTITY LOCK: "+phIdentity,
+      phBrand,
+      "WARDROBE: "+phLook.wardrobe,
+      "BACKGROUND: "+phLook.background,
+      "LIGHTING: "+phLook.lighting,
+      "POSE AND EXPRESSION: "+phLook.pose,
+      "FRAMING: "+phLook.framing,
+      "DISTINCTION: This is one of four separate headshots. Make this look genuinely different from the other three through wardrobe, background, lighting, pose, crop and overall mood. Do not create the same portrait with only a background swap. Keep the identity lock unchanged.",
+      "QUALITY: Photorealistic professional portrait photography, realistic anatomy, natural hands if visible, clean eyes and teeth, believable hair detail, accurate clothing texture, crisp focus on the face and polished but believable color. No text, logos, watermarks, fake company marks, invented awards or credentials.",
+      "OUTPUT: One standalone image only. No collage, contact sheet, comparison grid or multiple versions in one frame. Keep the subject comfortably inside the crop with no accidental cutting through the head."
+    ].join("\n\n");
+  }
+
+  function phInitProHeadshots(){
+    const phRoot=document.getElementById("ph-pro-headshots");
+    if(!phRoot || phRoot.dataset.phInitialized==="true") return;
+    phRoot.dataset.phInitialized="true";
+    const phById=function phGet(id){return phRoot.querySelector("#"+id);};
+    const phPhoto=phById("ph-photo"),phPreview=phById("ph-photo-preview"),phPreviewImage=phById("ph-photo-image");
+    const phProfession=phById("ph-profession"),phCustomWrap=phById("ph-custom-profession-wrap"),phCustomInput=phById("ph-custom-profession");
+    const phStatus=phById("ph-status"),phLookList=phById("ph-look-list");
+    let phPhotoUrl="",phGenerated=[];
+
+    function phMessage(message){phStatus.textContent=message;}
+    function phShow(number){
+      phRoot.querySelectorAll("[data-ph-screen]").forEach(function phScreen(screen){
+        const phActive=screen.getAttribute("data-ph-screen")===String(number);
+        screen.hidden=!phActive;screen.classList.toggle("ph-screen-active",phActive);
+      });
+      phRoot.querySelectorAll("[data-ph-go]").forEach(function phStep(step){
+        const phNum=Number(step.getAttribute("data-ph-go"));
+        step.classList.toggle("ph-step-active",phNum===number);step.classList.toggle("ph-step-done",phNum<number);
+      });
+      phMessage("");
+    }
+    function phGetProfession(){return phProfession.value==="Custom profession"?phCustomInput.value.trim():phProfession.value.trim();}
+    function phCopy(text){
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function phCopied(){phMessage("Copied. Paste this prompt into your image tool with the same reference photo.");}).catch(function phCopyFallbackRun(){phFallback(text);});
+      }else{phFallback(text);}
+    }
+    function phFallback(text){
+      const phTemp=document.createElement("textarea");phTemp.value=text;phTemp.setAttribute("readonly","");phTemp.style.position="fixed";phTemp.style.opacity="0";document.body.appendChild(phTemp);phTemp.select();
+      try{document.execCommand("copy");phMessage("Copied. Paste this prompt into your image tool with the same reference photo.");}
+      catch(phError){phMessage("Copy was blocked. Select the prompt text and copy it manually.");}
+      phTemp.remove();
+    }
+    function phRender(){
+      phLookList.innerHTML=phGenerated.map(function phCard(item,index){
+        return '<article class="ph-look-card"><div class="ph-look-head"><strong>'+phEscape(item.name)+'</strong><span>'+phEscape(item.label)+'</span></div><div class="ph-look-body"><p><strong>Wardrobe:</strong> '+phEscape(item.wardrobe)+'</p><textarea class="ph-prompt" readonly aria-label="'+phEscape(item.name)+' prompt">'+phEscape(item.prompt)+'</textarea><button type="button" class="ph-button ph-button-secondary ph-copy-one" data-ph-copy-index="'+index+'">Copy This Prompt</button></div></article>';
+      }).join("");
+      phRoot.querySelectorAll("[data-ph-copy-index]").forEach(function phBindCopy(button){
+        button.addEventListener("click",function phCopyOne(){phCopy(phGenerated[Number(button.getAttribute("data-ph-copy-index"))].prompt);});
+      });
+    }
+
+    phPhoto.addEventListener("change",function phPhotoChange(){
+      const phFile=phPhoto.files&&phPhoto.files[0];if(!phFile)return;
+      if(!phFile.type||!phFile.type.startsWith("image/")){phPhoto.value="";phMessage("Please choose an image file.");return;}
+      if(phPhotoUrl)URL.revokeObjectURL(phPhotoUrl);
+      phPhotoUrl=URL.createObjectURL(phFile);phPreviewImage.src=phPhotoUrl;phById("ph-photo-name").textContent=phFile.name;phPreview.hidden=false;
+      phMessage("Reference photo selected. Use this same photo with each of the four prompts.");
+    });
+    phById("ph-remove-photo").addEventListener("click",function phRemove(){
+      if(phPhotoUrl)URL.revokeObjectURL(phPhotoUrl);phPhotoUrl="";phPhoto.value="";phPreviewImage.removeAttribute("src");phPreview.hidden=true;phMessage("Reference photo removed.");
+    });
+    phProfession.addEventListener("change",function phCustomToggle(){
+      const phCustom=phProfession.value==="Custom profession";phCustomWrap.hidden=!phCustom;if(!phCustom)phCustomInput.value="";
+    });
+
+    phRoot.querySelectorAll("[data-ph-next]").forEach(function phBindNext(button){
+      button.addEventListener("click",function phNext(){
+        const phTarget=Number(button.getAttribute("data-ph-next"));
+        if(phTarget===2&&(!phPhoto.files||!phPhoto.files[0])){phMessage("Choose your reference photo before continuing.");phPhoto.focus();return;}
+        if(phTarget===3){
+          const phJob=phGetProfession();if(!phJob){phMessage("Choose or enter your profession to continue.");phProfession.focus();return;}
+          phGenerated=phLooks.map(function phMake(look){return {name:look.name,label:look.label,wardrobe:look.wardrobe,prompt:phBuildPrompt(look,phJob,phById("ph-brand-notes").value.trim())};});
+          phRender();
+        }
+        phShow(phTarget);
+      });
+    });
+    phRoot.querySelectorAll("[data-ph-back]").forEach(function phBindBack(button){
+      button.addEventListener("click",function phBack(){phShow(Number(button.getAttribute("data-ph-back")));});
+    });
+    phRoot.querySelectorAll("[data-ph-go]").forEach(function phBindStep(button){
+      button.addEventListener("click",function phStepClick(){
+        const phTarget=Number(button.getAttribute("data-ph-go"));
+        if(phTarget===1)phShow(1);
+        else if(phTarget===2&&phPhoto.files&&phPhoto.files[0])phShow(2);
+        else if(phTarget===3&&phGenerated.length)phShow(3);
+        else phMessage("Complete the earlier step before opening this one.");
+      });
+    });
+    phById("ph-copy-all").addEventListener("click",function phCopyAll(){
+      phCopy(phGenerated.map(function phFormat(item,index){return "LOOK "+(index+1)+": "+item.name+"\n\n"+item.prompt;}).join("\n\n"+"=".repeat(48)+"\n\n"));
+    });
+    phById("ph-regenerate").addEventListener("click",function phRefresh(){
+      const phJob=phGetProfession();if(!phJob||!phPhoto.files||!phPhoto.files[0]){phMessage("Return to the earlier steps and confirm your photo and profession.");return;}
+      phGenerated=phLooks.map(function phMakeAgain(look){return {name:look.name,label:look.label,wardrobe:look.wardrobe,prompt:phBuildPrompt(look,phJob,phById("ph-brand-notes").value.trim())};});
+      phRender();phMessage("The four prompts have been refreshed. Your selected details are unchanged.");
+    });
+    phRoot.querySelector("[data-ph-start-over]").addEventListener("click",function phStartOver(){phShow(1);});
+    phShow(1);
+  }
+
+  window.phInitProHeadshots=phInitProHeadshots;
+  if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",phInitProHeadshots,{once:true});}
+  else{phInitProHeadshots();}
+})();
 </script>
 </body>
 </html>
